@@ -3,8 +3,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    restart: on-failure
     ports:
-      - "8000:80"
+      - "8001:80"
     volumes:
       - .:/src
     environment:
