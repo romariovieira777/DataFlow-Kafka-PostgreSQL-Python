@@ -32,7 +32,7 @@ Este projeto tem como objetivo criar um sistema distribuído que realiza o receb
     A pasta model é responsável por definir os modelos de dados utilizados na aplicação. 
     Esses modelos geralmente representam entidades do domínio da aplicação e são usados para interagir com o banco de dados. 
     A definição dos modelos inclui a estrutura das tabelas, relacionamentos entre elas e quaisquer comportamentos específicos associados às entidades.
-- /src/repositoy
+- /src/repository
     --
     A pasta repository é responsável por encapsular a lógica de acesso e manipulação dos dados no banco de dados. 
     Ela atua como uma camada intermediária entre os modelos de dados e os serviços da aplicação, fornecendo uma interface limpa e métodos específicos para realizar operações CRUD (Create, Read, Update, Delete) e outras consultas necessárias.
@@ -251,6 +251,8 @@ async def startup_event():
  - O timestamp é gerado automaticamente na inserção do registro.
  - O json para cadastro do produto foi separado em tabelas para armazenamento em um banco de dados
 relacional, priorizando a normalização dos dados (1,2 e 3), redução de redundância e anomalias nos dados, manutenção e escabilidade
+ - O endpoint para consumo das mensagens no kafka, foi desenvolvido para fins de teste, sendo sua função de consumo
+um laço com um limite de verificações no tópico para encerramento para ser retornado as mensagens a API.
 
 
 ## Autores
