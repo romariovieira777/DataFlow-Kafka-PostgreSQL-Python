@@ -253,6 +253,11 @@ async def startup_event():
 
 
 
+## Observações
+ - O id do produto é gerado automaticamente na inserção do registro.
+ - O timestamp é gerado automaticamente na inserção do registro.
+ - O json para cadastro do produto foi separado em tabelas para armazenamento em um banco de dados
+relacional, priorizando a normalização dos dados (1,2 e 3), redução de redundância e anomalias nos dados, manutenção e escabilidade
 
 
 ## Autores
