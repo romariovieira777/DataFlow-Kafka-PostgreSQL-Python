@@ -149,13 +149,6 @@ Este projeto tem como objetivo criar um sistema distribuído que realiza o receb
 ![App Screenshot](assets/documentacao_api.png)
 
 
-
-
-## Arquitetura
-
-Insira um gif ou um link de alguma demonstração
-
-
 ## Configuração do ambiente e execução da aplicação
 Pré-requisitos (Consultar instalação para o ambiente a ser usado: Linux, Mac, Windows)
  - Python 3.8 ou superior
